@@ -1,6 +1,7 @@
 /*landing page styles */
 body {
     margin: 0;
+    background-color: #ef5350;
 }
 h1, h2{
     font-family: 'Timmana', sans-serif;
@@ -33,7 +34,6 @@ main {
 .hero {
     width: 100%;
     display: block;
-    background-color: grey;
     
 }
 header {
