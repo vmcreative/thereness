@@ -1,0 +1,40 @@
+<% include partials/aframe/header %>
+<% include partials/aframe/gallery-assets %>
+<% include partials/aframe/camera %>
+
+<!-- skybox -->
+<a-sky id="skybox"src="#gallery-sky" radius="400" position="0 -100 0"></a-sky>
+
+<!-- menu -->
+<a-entity id="menu">
+  <a-entity id="submenu" position="0 -1.2 0" layout="type: circle; plane: xz; radius: 1.2; angle: 30">
+    <a-entity id="exit"
+      template="src: #menu-button"
+      data-button="_link"
+      href="/">
+    </a-entity>
+  </a-entity>
+</a-entity>
+
+<a-entity id="title">
+  <a-text mixin="_title-text" value="VR Brooklyn Bunker Tour"></a-text>
+  <a-text mixin="_sub-text" value="...in sunny Wellington!"></a-text>
+</a-entity>
+<a-entity id="instructions" mixin="_instructions">
+  <a-text value="Instructions:" position="0 0.75 0"></a-text>
+  <a-text value="- drag to view on desktop" position="0 0.5 0"></a-text>
+  <a-text value="- tilt to view on mobile" position="0 0.25 0"></a-text>
+  <a-text value="- hover to select with the circle"></a-text>
+</a-entity>
+
+<a-entity id="tour-select" position="0 1.2 0" rotation="0  37.5 0" layout="type: circle; plane: xz; radius: 4.5; angle: 15">
+  <% gallery[0].tours.forEach(function(e){ %>
+     <a-entity
+      template="src: #bubble"
+      data-view="#<%=e.id%>-thumb"
+      href="/tour/<%=e.id%>">
+    </a-entity>
+  <% }); %>
+</a-entity>
+
+<% include partials/aframe/footer %>

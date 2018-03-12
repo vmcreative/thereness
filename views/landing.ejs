@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+
+
+<main>
+    
+    <div class="content">
+        <% include partials/octocat %>
+        <img class="hero" src="../img/hero.jpg">
+        <header>
+            <h1>Thereness - A dynamic WebVR photosphere app.</h1>
+        </header>
+        <section>
+            <div class="button-wrapper">
+                <button class="demo"><a href="/gallery"><strong>Launch Demo Tour</strong></a></button>
+            </div>
+            <h2>Virtual tourism, simplified.</h2>
+            <p>WebVR is still in its infancy as a medium - but it's getting more robust every day. As 3D graphics processing for mobile browsers becomes cheaper and faster, the web could replace local applications for virtual reality experiences.</p>
+            <p>This page is a proof-of-concept web app for creating dynamically generated VR photosphere tours. It's built on a Node/Express backend and renders the VR view using <a href="https://aframe.io/">A-Frame</a>, an open-source WebVR framework.</p>
+            <p>Behind the scenes, its very simple. Each tour makes a single GET request to the server. The app hooks into a JSON index that returns a sub-index of images and relative links between the images through 'portals' in the VR view. The page is dynamically templated with javascript to build the VR scene within the DOM.</p>
+            <p class="copyright">&#169;2018 Vincent Martin | <a href="http://vincentmartin.us/">vincentmartin.us</a></p>
+        </section>
+    </div>
+</main>
+
+
+
+
+<% include partials/footer %>

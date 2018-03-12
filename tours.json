@@ -1,0 +1,659 @@
+[
+    {
+    "id": 0,
+    "name": "gallery",
+    "tours": [
+            {"id": 1},
+            {"id": 2},
+            {"id": 3},
+            {"id": 4},
+            {"id": 5},
+            {"id": 6}
+        ]
+    },
+    
+    {
+    "id": 1,
+    "name": "bunker 1",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": 186,
+                "scale": 1,
+                "height": 0,
+                "path": "gallery"},
+                {"rot": 156.5,
+                "scale": 1,
+                "height": 0,
+                "path": "1"},
+                {"rot": 109.5,
+                "scale": 1,
+                "height": 0,
+                "path": "2"},
+                {"rot": 62,
+                "scale": 1,
+                "height": 0,
+                "path": "3"},
+                {"rot": 17.5,
+                "scale": 1,
+                "height": 0,
+                "path": "4"},
+                {"rot": -25.5,
+                "scale": 1,
+                "height": 0,
+                "path": "5"},
+                {"rot": -68,
+                "scale": 1,
+                "height": 0,
+                "path": "6"},
+                {"rot": -112.5,
+                "scale": 1,
+                "height": 0,
+                "path": "8"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": 163,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 2,
+            "portals": [
+                {"rot": 168,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 3,
+            "portals": [
+                {"rot": 173,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 4,
+            "portals": [
+                {"rot": 167,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 5,
+            "portals": [
+                {"rot": 162,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 6,
+            "portals": [
+                {"rot": 84,
+                "scale": 1,
+                "height": 0,
+                "path": "7"},
+                {"rot": 177,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 7,
+            "portals": [
+                {"rot": 123,
+                "scale": 1,
+                "height": 2,
+                "path": "6"}
+                ]},
+            {"id": 8,
+            "portals": [
+                {"rot": 73,
+                "scale": 1,
+                "height": 0,
+                "path": "9"},
+                {"rot": 171,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 9,
+            "portals": [
+                {"rot": 114,
+                "scale": 1,
+                "height": 2,
+                "path": "8"}
+                ]}
+        ]
+    },
+    
+    {
+    "id": 2,
+    "name": "bunker 2",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": 171,
+                "scale": 1,
+                "height": 0,
+                "path": "gallery"},
+                {"rot": 145,
+                "scale": 1,
+                "height": 0,
+                "path": "1"},
+                {"rot": 100,
+                "scale": 1,
+                "height": 0.5,
+                "path": "2"},
+                {"rot": 56.5,
+                "scale": 1,
+                "height": 0.8,
+                "path": "3"},
+                {"rot": 13,
+                "scale": 1,
+                "height": 0.8,
+                "path": "5"},
+                {"rot": -33,
+                "scale": 1,
+                "height": 0.5,
+                "path": "6"},
+                {"rot": -79,
+                "scale": 1,
+                "height": 0.2,
+                "path": "7"},
+                {"rot": -126,
+                "scale": 1,
+                "height": -0.5,
+                "path": "8"},
+                {"rot": -163,
+                "scale": 1,
+                "height": -0.5,
+                "path": "10"},
+                {"rot": -10,
+                "scale": 1,
+                "height": 0.8,
+                "path": "11"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": 173,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 2,
+            "portals": [
+                {"rot": 172,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 3,
+            "portals": [
+                {"rot": 169,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 71.5,
+                "scale": 1,
+                "height": 0,
+                "path": "4"}
+                ]},
+            {"id": 4,
+            "portals": [
+                {"rot": 117,
+                "scale": 1,
+                "height": 2,
+                "path": "3"}
+                ]},
+            {"id": 5,
+            "portals": [
+                {"rot": 176,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 6,
+            "portals": [
+                {"rot": 175,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 7,
+            "portals": [
+                {"rot": 155,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 8,
+            "portals": [
+                {"rot": 173,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 74,
+                "scale": 1,
+                "height": 0,
+                "path": "9"}
+                ]},
+            {"id": 9,
+            "portals": [
+                {"rot": 109,
+                "scale": 1,
+                "height": 2,
+                "path": "8"}
+                ]},
+            {"id": 10,
+            "portals": [
+                {"rot": 170,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 11,
+            "portals": [
+                {"rot": 170,
+                "scale": 2,
+                "height": 0,
+                "path": "0"}
+                ]}
+        ]
+    },
+    
+    {
+    "id": 3,
+    "name": "side structure",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": 140,
+                "scale": 1,
+                "height": 0,
+                "path": "gallery"},
+                {"rot": -80,
+                "scale": 1,
+                "height": 0,
+                "path": "1"},
+                {"rot": -98,
+                "scale": 1,
+                "height": 0,
+                "path": "2"},
+                {"rot": -40,
+                "scale": 1,
+                "height": -1.5,
+                "path": "3"},
+                {"rot": 85,
+                "scale": 1,
+                "height": 0,
+                "path": "4"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": 100,
+                "scale": 2,
+                "height": 0,
+                "path": "0"}
+                ]},
+            {"id": 2,
+            "portals": [
+                {"rot": 150,
+                "scale": 2,
+                "height": 0,
+                "path": "0"}
+                ]},
+            {"id": 3,
+            "portals": [
+                {"rot": -158,
+                "scale": 2,
+                "height": 0,
+                "path": "0"}
+                ]},
+            {"id": 4,
+            "portals": [
+                {"rot": 163,
+                "scale": 2,
+                "height": 0,
+                "path": "0"}
+                ]}
+        ]
+    },
+    
+    {
+    "id": 4,
+    "name": "bunker 3 basement",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": 170,
+                "scale": 1,
+                "height": 3,
+                "path": "gallery"},
+                {"rot": -95,
+                "scale": 2,
+                "height": 0,
+                "path": "1"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": -23,
+                "scale": 1,
+                "height": 1,
+                "path": "0"}
+                ]}
+        ]
+    },
+    
+    {
+    "id": 5,
+    "name": "bunker 3",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": 178,
+                "scale": 1,
+                "height": 0.5,
+                "path": "gallery"},
+                {"rot": 148,
+                "scale": 1,
+                "height": 0.5,
+                "path": "1"},
+                {"rot": 107,
+                "scale": 1,
+                "height": 0.5,
+                "path": "2"},
+                {"rot": 66,
+                "scale": 1,
+                "height": 0.5,
+                "path": "3"},
+                {"rot": 23.5,
+                "scale": 1,
+                "height": 0.5,
+                "path": "5"},
+                {"rot":-23.5,
+                "scale": 1,
+                "height": 0.5,
+                "path": "6"},
+                {"rot": -72,
+                "scale": 1,
+                "height": 0.5,
+                "path": "7"},
+                {"rot": -120,
+                "scale": 1,
+                "height": 0.5,
+                "path": "9"},
+                {"rot": -157.5,
+                "scale": 1,
+                "height": 0.5,
+                "path": "11"},
+                {"rot": 0,
+                "scale": 1,
+                "height": 0.5,
+                "path": "12"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": 168,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 2,
+            "portals": [
+                {"rot": 172,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 3,
+            "portals": [
+                {"rot": 177,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 71,
+                "scale": 1,
+                "height": 0.5,
+                "path": "4"}
+                ]},
+            {"id": 4,
+            "portals": [
+                {"rot": -178,
+                "scale": 2,
+                "height": 2,
+                "path": "3"}
+                ]},
+            {"id": 5,
+            "portals": [
+                {"rot": 158,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 6,
+            "portals": [
+                {"rot": 175,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 7,
+            "portals": [
+                {"rot": 167,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 77.5,
+                "scale": 1,
+                "height": 0.5,
+                "path": "8"}
+                ]},
+            {"id": 8,
+            "portals": [
+                {"rot": 106.5,
+                "scale": 1,
+                "height": 2,
+                "path": "7"}
+                ]},
+            {"id": 9,
+            "portals": [
+                {"rot": -167,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 70,
+                "scale": 2,
+                "height": 0,
+                "path": "10"}
+                ]},
+            {"id": 10,
+            "portals": [
+                {"rot": 102,
+                "scale": 1,
+                "height": 2,
+                "path": "9"}
+                ]},
+            {"id": 11,
+            "portals": [
+                {"rot": 167,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 12,
+            "portals": [
+                {"rot": -176,
+                "scale": 2,
+                "height": -1,
+                "path": "0"}
+                ]}
+        ]
+    },
+    
+    {
+    "id": 6,
+    "name": "bunker 4",
+    "rooms": [
+            {"id": 0,
+            "portals": [
+                {"rot": -178,
+                "scale": 1,
+                "height": 0.5,
+                "path": "gallery"},
+                {"rot": 153.5,
+                "scale": 1,
+                "height": 0.4,
+                "path": "1"},
+                {"rot": 109,
+                "scale": 1,
+                "height": 0.3,
+                "path": "2"},
+                {"rot": 63,
+                "scale": 1,
+                "height": 0.2,
+                "path": "4"},
+                {"rot": 17,
+                "scale": 1,
+                "height": 0.1,
+                "path": "5"},
+                {"rot": -28,
+                "scale": 1,
+                "height": 0.1,
+                "path": "6"},
+                {"rot": -72.5,
+                "scale": 1,
+                "height": 0.2,
+                "path": "7"},
+                {"rot": -115,
+                "scale": 1,
+                "height": 0.3,
+                "path": "9"},
+                {"rot": -151.5,
+                "scale": 1,
+                "height": 0.4,
+                "path": "11"},
+                {"rot": -5,
+                "scale": 1,
+                "height": 0,
+                "path": "12"},
+                {"rot": -51,
+                "scale": 1,
+                "height": 3,
+                "path": "13"},
+                {"rot": 147,
+                "scale": 1,
+                "height": 3.8,
+                "path": "14"}
+                ]},
+            {"id": 1,
+            "portals": [
+                {"rot": 171,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 2,
+            "portals": [
+                {"rot": 169,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 72,
+                "scale": 1,
+                "height": 0,
+                "path": "3"}
+                ]},
+            {"id": 3,
+            "portals": [
+                {"rot": 121,
+                "scale": 1,
+                "height": 2,
+                "path": "2"}
+                ]},
+            {"id": 4,
+            "portals": [
+                {"rot": 169,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 5,
+            "portals": [
+                {"rot": 260,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 6,
+            "portals": [
+                {"rot": 168,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 7,
+            "portals": [
+                {"rot": 160,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 70,
+                "scale": 1,
+                "height": 0,
+                "path": "8"}
+                ]},
+            {"id": 8,
+            "portals": [
+                {"rot": 103.5,
+                "scale": 1,
+                "height": 2,
+                "path": "7"}
+                ]},
+            {"id": 9,
+            "portals": [
+                {"rot": 167,
+                "scale": 2,
+                "height": 2,
+                "path": "0"},
+                {"rot": 65,
+                "scale": 1,
+                "height": 0,
+                "path": "10"}
+                ]},
+            {"id": 10,
+            "portals": [
+                {"rot": -170,
+                "scale": 2,
+                "height": 2,
+                "path": "9"}
+                ]},
+            {"id": 11,
+            "portals": [
+                {"rot": 166,
+                "scale": 2,
+                "height": 2,
+                "path": "0"}
+                ]},
+            {"id": 12,
+            "portals": [
+                {"rot": -5,
+                "scale": 2,
+                "height": -2,
+                "path": "0"}
+                ]},
+            {"id": 13,
+            "portals": [
+                {"rot": -90,
+                "scale": 2,
+                "height": -2,
+                "path": "0"}
+                ]},
+            {"id": 14,
+            "portals": [
+                {"rot": 120,
+                "scale": 2,
+                "height": -4,
+                "path": "0"}
+                ]}
+        ]
+    }
+]

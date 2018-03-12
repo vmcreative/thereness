@@ -1,0 +1,81 @@
+<a-assets>
+    <!-- images -->
+    <% tour.rooms.forEach(function(e){ %>
+    <img id="<%= e.id %>-sky"   src="../img/tours/<%= tour.id %>/skybox/<%= e.id %>.jpg">
+    <img id="<%= e.id %>-thumb" src="../img/tours/<%= tour.id %>/thumb/<%= e.id %>.jpg">
+    <% }); %>
+    <!-- audio -->
+    <audio id="select-1" src="../audio/select_1.ogg"></audio>
+    <audio id="select-2" src="../audio/select_2.ogg"></audio>
+    <!-- mixins -->
+    <a-mixin id="_bubble"   geometry="radius: 0.50" material="color: #ffffff; shader: flat" sound="on: click; src: #select-2" look-at="src: #camera"></a-mixin>
+    <a-mixin id="_border"   geometry="radius: 0.51" material="color: #ececec; shader: flat" position="0 0 -.001"></a-mixin>
+    <a-mixin id="_button"   material="shader: flat" sound="on: click; src: #select-1"></a-mixin>
+    <a-mixin id="_link"     geometry="radius: 0.20" material="color: #303030" look-at="src: #camera"></a-mixin>
+    <a-mixin id="_close"    geometry="radius: 0.15" material="color: #ef5350" look-at="src: #camera"></a-mixin>
+    <a-mixin id="_nav"      geometry="radius: 0.15" material="color: #6c6c6c"></a-mixin>
+    <a-mixin id="_portal"   material="color: #ffffff; opacity: 0.7; shader: flat" sound="on: click; src: #select-2" look-at="src: #camera"></a-mixin>
+    <a-mixin id="_gallery"  material="color: #303030; opacity: 1" sound="on: click; src: #select-1"></a-mixin>
+    <a-mixin id="_p-layout"   layout="type: circle; plane: xz; radius: 10"></a-mixin>
+    <a-mixin id="_menu-text"    text="width: 2.0; align: center; color: #ececec" position="0 0 .001"></a-mixin>
+    <a-mixin id="_portal-text"  text="align: center; color: #ececec"  position="0 0 .008"></a-mixin>
+    <a-mixin id="_nav-text"     text="width: 1.6; align: center; color: #303030; value: Menu" position="0 0 .01"></a-mixin>
+    <!-- templates -->
+    <script id="nav-button" type="text/html">
+      <a-circle class="clickable" mixin="_button _nav"  rotation="${turn}"
+      event-set__1="_event: mousedown; scale: .9 .9 1"
+      event-set__2="_event: mouseup; scale: 1 1 1"
+      event-set__3="_event: mouseenter; material.color: #ececec"
+      event-set__4="_event: mouseleave; material.color: #6c6c6c"
+      show="on: click; target: #menu"
+      hide="on: click; target: #nav"
+      hide-portals="on:click; target: #portals">
+        <a-text mixin="_nav-text" value="Menu"></a-text>
+      </a-circle>
+    </script>
+    <script id="menu-button" type="text/html">
+      <a-circle class="clickable" mixin="_button ${button}"
+      event-set__1="_event: mousedown; scale: .9 .9 1"
+      event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+      event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+      event-set__4="_event: mouseleave; scale: 1 1 1"
+      show="on: click; target: #nav"
+      hide="on: click; target: #menu"
+      show-portals="on:click; target: #portals">
+        <a-text mixin="_menu-text" value="${text}"></a-text>
+      </a-circle>
+    </script>
+    <script id="bubble" type="text/html">
+      <a-circle class="clickable" mixin="_bubble" src="${view}"
+      event-set__1="_event: mousedown; scale: .9 .9 1"
+      event-set__2="_event: mouseup; scale: 1 1 1"
+      event-set__3="_event: mouseenter; material.color: #ffcccb"
+      event-set__4="_event: mouseleave; material.color: #ffffff"
+      set-image="on: click; target: #skybox; src: ${src}"
+      show="on: click; target: #nav"
+      hide="on: click; target: #menu"
+      show-portals="on:click; target: ${show}; dur: 600">
+        <a-circle mixin="_border"></a-circle>
+      </a-circle>
+    </script>
+    <script id="portal-room" type="text/html">
+      <a-circle class="clickable" mixin="_portal" src="${view}" radius="${radius}"
+      event-set__1="_event: mousedown; scale: .9 .9 1"
+      event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+      event-set__3="_event: mouseenter; material.opacity: 1; scale: 1.2 1.2 1"
+      event-set__4="_event: mouseleave; material.opacity: 0.7; scale: 1 1 1"
+      set-image="on: click; target: #skybox; src: ${src}"
+      hide="on:click; target: ${hide}"
+      show="on:click; target: ${show}; dur: 600">
+      </a-circle>
+    </script>
+    <script id="portal-gallery" type="text/html">
+      <a-circle class="clickable" mixin="_portal _gallery"  radius="${radius}"
+      event-set__1="_event: mousedown; scale: .9 .9 1"
+      event-set__2="_event: mouseup; scale: 1 1 1"
+      event-set__3="_event: mouseenter; material.color: #6c6c6c"
+      event-set__4="_event: mouseleave; material.color: #303030">
+        <a-text mixin="_portal-text" value="Gallery" text="width: ${fontsize}"></a-text>
+      </a-circle>
+    </script>
+</a-assets>

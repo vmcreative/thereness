@@ -1,0 +1,145 @@
+/*landing page styles */
+h1, h2{
+    font-family: 'Timmana', sans-serif;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #3ea2eb;
+    text-decoration: none;
+}
+a:hover {
+    color: #317fb9;
+}
+main {
+    background: linear-gradient(#303030, #0f1616);
+    padding: 0 6rem;
+    min-height: 100vh;
+}
+.content {
+    min-height: inherit;
+    background-color: #fefefe;
+    margin: 0 auto;
+    max-width: 90rem;
+    position: relative;
+}
+.hero {
+    width: 100%;
+    display: block;
+    background-color: grey;
+    
+}
+header {
+    background-color: #ef5350;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    margin: 1rem 3rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.demo {
+    background-color: #fdbb2d;
+    border: none;
+    padding: 1rem;
+    margin: 0 auto .25rem;
+    -moz-box-shadow:    inset 0 -0.25rem 0 #ea8b0f;
+    -webkit-box-shadow: inset 0 -0.25rem 0 #ea8b0f;
+    box-shadow:         inset 0 -0.25rem 0 #ea8b0f;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.demo:hover {
+    background-color: #ffc834;
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+    -moz-box-shadow:    inset 0 0rem 0 #ea8b0f;
+    -webkit-box-shadow: inset 0 0rem 0 #ea8b0f;
+    box-shadow:         inset 0 0rem 0 #ea8b0f;
+}
+.demo a {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+section {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 1.5rem;
+    -moz-box-shadow:    inset 0 0.5rem 0 #b61827;
+    -webkit-box-shadow: inset 0 0.5rem 0 #b61827;
+    box-shadow:         inset 0 0.5rem 0 #b61827;
+}
+section img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: smaller;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+    padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+    padding: 0;
+    }
+}
+
+
+
+
+
+
+/* VR preloader styles */
+#preloader {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(lightgray, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#preloader p {
+    font-family: 'Timmana', sans-serif;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 20vh;
+}
+#preloader img {
+    height: 40vh;
+    width: 40vh;
+    margin-top: 20vh;
+    margin-left: 2vw;
+}
+#preloader p, #preloader img, .pace {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

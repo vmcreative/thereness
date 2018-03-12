@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VR Brooklyn Bunkers Tour</title>
+  <!-- preloader script -->
+  <script src="../pace/pace.min.js"></script>
+  <script type="text/javascript">
+  Pace.on("done", function(){document.getElementById('preloader').style.display = 'none';});
+  </script>
+  <!-- styles + fonts -->
+  <link rel="stylesheet" href="../pace/themes/pace-theme-center-simple.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- a-frame + components -->
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="../components/aframe-animation-component.min.js"></script>
+  <script src="../components/aframe-layout-component.min.js"></script>
+  <script src="../components/aframe-look-at-billboard-component.min.js"></script>
+  <script src="../components/aframe-event-set-component.min.js"></script>
+  <script src="../components/aframe-template-component.min.js"></script>
+  <script src="../components/aframe-set-image-component.js"></script>
+  <script src="../components/aframe-show-hide-component.js"></script>
+  <script src="../components/aframe-modify-menu-component.js"></script>
+  <script src="../components/aframe-href-component.js"></script>
+</head>
+<body>
+<!-- preloader -->
+<div id="preloader">
+  <img src="../img/nz_wellington.svg">
+  <p>loading tour</p>
+</div>
+<!-- set up a-frame scene -->
+<a-scene>
