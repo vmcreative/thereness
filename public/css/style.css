@@ -41,6 +41,9 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    -moz-box-shadow:    inset 0 -0.5rem 0 #b61827;
+    -webkit-box-shadow: inset 0 -0.5rem 0 #b61827;
+    box-shadow:         inset 0 -0.5rem 0 #b61827;
 }
 header h1 {
     margin: 1rem 3rem;
@@ -84,9 +87,6 @@ section {
     background-color: #fefefe;
     margin: 0 auto;
     padding: 1.5rem;
-    -moz-box-shadow:    inset 0 0.5rem 0 #b61827;
-    -webkit-box-shadow: inset 0 0.5rem 0 #b61827;
-    box-shadow:         inset 0 0.5rem 0 #b61827;
 }
 section img {
     width: 60%;
