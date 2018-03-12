@@ -3,85 +3,89 @@
 <% include partials/aframe/camera %>
 <% include partials/aframe/nav %>
 
-
-<!-- skybox -->
-<a-sky id="skybox"src="#0-sky" radius="400" position="0 -100 0"></a-sky>
-
-<!-- menu -->
-<a-entity id="menu" initial-hide="target: #menu">
-  <a-entity id="submenu" position="0 -1.2 0" rotation="0 30 0" layout="type: circle; plane: xz; radius: 1.2; angle: 30">
-    <a-entity id="gallery"
-      template="src: #menu-button"
-      data-button="_link"
-      data-text="Gallery"
-      href="/gallery">
+<!--set scene orientation-->
+<a-entity rotation="0 90 0">
+  
+  <!-- skybox -->
+  <a-sky id="skybox"src="#0-sky" radius="400" position="0 -100 0"></a-sky>
+  
+  <!-- menu -->
+  <a-entity id="menu" initial-hide="target: #menu">
+    <a-entity id="submenu" position="0 -1.2 0" rotation="0 30 0" layout="type: circle; plane: xz; radius: 1.2; angle: 30">
+      <a-entity id="gallery"
+        template="src: #menu-button"
+        data-button="_link"
+        data-text="Gallery"
+        href="/gallery">
+      </a-entity>
+      <a-entity id="close"
+        template="src: #menu-button"
+        data-button="_close"
+        data-text="X">
+      </a-entity>
+      <a-entity id="exit"
+        template="src: #menu-button"
+        data-button="_link"
+        data-text="Exit VR"
+        href="/">
+      </a-entity>
     </a-entity>
-    <a-entity id="close"
-      template="src: #menu-button"
-      data-button="_close"
-      data-text="X">
-    </a-entity>
-    <a-entity id="exit"
-      template="src: #menu-button"
-      data-button="_link"
-      data-text="Exit VR"
-      href="/">
-    </a-entity>
-  </a-entity>
-  <!-- populate menu -->
-  <% include partials/functions/menu %>
-  <% var rooms = tour.rooms,
-         row = menuArray(rooms),
-         n =0;
-     row.forEach(function(e){%>
-  <a-entity class="image-row" position="0 <%=e.position%> 0" rotation="0 <%=e.rotation%> 0" layout="type: circle; plane: xz; radius: <%=e.radius%>; angle: <%=e.angle%>">
-  <% for (var i = 0; i < e.num; i++) { %>
-    <a-entity
-      template="src: #bubble"
-      data-view="#<%=n%>-thumb"
-      data-src="#<%=n%>-sky"
-      data-show="#portal-group-<%=n%>">
-    </a-entity>
-  <% n ++ %>
-  <% } %>
-  </a-entity>
-  <% }); %>
-</a-entity>
-<!-- populate portals -->
-<a-entity id="portals">
-  <% rooms.forEach(function(r){ %>
-  <% if(r.id == 0){ %>
-  <a-entity id="portal-group-<%= r.id %>">
-  <% } else { %>
-  <a-entity id="portal-group-<%= r.id %>" initial-hide="target: #portal-group-<%= r.id %>">
-  <% } %>
-    <% r.portals.forEach(function(p){ %>
-    <% if (p.path == "gallery"){ %>
-    <a-entity
-      template="src: #portal-gallery"
-      mixin="_p-layout"
-      href="/gallery"
-      rotation="0 <%=p.rot%> 0"
-      data-radius="<%=p.scale * .6%>"
-      position="0 <%=p.height - 1.5%> 0"
-      data-fontsize="<%=p.scale * 5%>">
-    </a-entity>
-    <% } else { %>
-    <a-entity
-      template="src: #portal-room"
-      mixin="_p-layout"
-      rotation="0 <%=p.rot%> 0"
-      data-radius="<%=p.scale * .6%>"
-      position="0 <%=p.height -1.5%> 0"
-      data-view="#<%=p.path%>-thumb"
-      data-src="#<%=p.path%>-sky"
-      data-hide="#portal-group-<%= r.id %>"
-      data-show="#portal-group-<%=p.path%>">
-    </a-entity>
+    <!-- populate menu -->
+    <% include partials/functions/menu %>
+    <% var rooms = tour.rooms,
+           row = menuArray(rooms),
+           n =0;
+       row.forEach(function(e){%>
+    <a-entity class="image-row" position="0 <%=e.position%> 0" rotation="0 <%=e.rotation%> 0" layout="type: circle; plane: xz; radius: <%=e.radius%>; angle: <%=e.angle%>">
+    <% for (var i = 0; i < e.num; i++) { %>
+      <a-entity
+        template="src: #bubble"
+        data-view="#<%=n%>-thumb"
+        data-src="#<%=n%>-sky"
+        data-show="#portal-group-<%=n%>">
+      </a-entity>
+    <% n ++ %>
     <% } %>
+    </a-entity>
     <% }); %>
   </a-entity>
-  <% }); %>
+  <!-- populate portals -->
+  <a-entity id="portals">
+    <% rooms.forEach(function(r){ %>
+    <% if(r.id == 0){ %>
+    <a-entity id="portal-group-<%= r.id %>">
+    <% } else { %>
+    <a-entity id="portal-group-<%= r.id %>" initial-hide="target: #portal-group-<%= r.id %>">
+    <% } %>
+      <% r.portals.forEach(function(p){ %>
+      <% if (p.path == "gallery"){ %>
+      <a-entity
+        template="src: #portal-gallery"
+        mixin="_p-layout"
+        href="/gallery"
+        rotation="0 <%=p.rot%> 0"
+        data-radius="<%=p.scale * .6%>"
+        position="0 <%=p.height - 1.5%> 0"
+        data-fontsize="<%=p.scale * 5%>">
+      </a-entity>
+      <% } else { %>
+      <a-entity
+        template="src: #portal-room"
+        mixin="_p-layout"
+        rotation="0 <%=p.rot%> 0"
+        data-radius="<%=p.scale * .6%>"
+        position="0 <%=p.height -1.5%> 0"
+        data-view="#<%=p.path%>-thumb"
+        data-src="#<%=p.path%>-sky"
+        data-hide="#portal-group-<%= r.id %>"
+        data-show="#portal-group-<%=p.path%>">
+      </a-entity>
+      <% } %>
+      <% }); %>
+    </a-entity>
+    <% }); %>
+  </a-entity>
+
 </a-entity>
 
 <% include partials/aframe/footer %>
